@@ -8,7 +8,6 @@ import scipy
 from scipy import integrate
 from keras.preprocessing import image
 from flask import Flask, request, render_template
-from flask_ngrok import run_with_ngrok
 import tensorflow as tf
 
 app = Flask(__name__)
@@ -77,6 +76,5 @@ def index():
 
 
 if __name__=="__main__":
-    run_with_ngrok(app)
     app.run()
 
